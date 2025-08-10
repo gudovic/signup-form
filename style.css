@@ -38,6 +38,7 @@ img {
     width: 40vw;
     color: white;
     min-width: 30vw;
+    position: relative;
 }
 
 .left-logo {
@@ -58,7 +59,8 @@ img {
 .credit {
     position: absolute;
     top: 96%;
-    left: 20%; 
+    left: 50%;
+    transform: translateX(-50%); 
     color: rgb(255, 255, 255, 0.7);
 }
 .right-cont{
@@ -107,6 +109,7 @@ button {
     height: 40px;
     font-weight: bold;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-top: 20px;
 }
 
 input {
@@ -115,9 +118,18 @@ input {
     padding-left: 5px;
 }
 
-input:active {
-    border: 2px solid blue;
+input:focus {
+    border: 2px solid rgb(64, 143, 99);
+    outline: none;
 }
+
 input:invalid {
     border: 2px solid red;
+}
+h2 {
+    margin-bottom: 20px;
+}
+
+.bottom-text {
+    padding: var(--padding);
 }
